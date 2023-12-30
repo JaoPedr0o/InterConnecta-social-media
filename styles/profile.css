@@ -1,0 +1,265 @@
+body {
+    width: 80rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ 
+    width: min(85rem, 80%);
+    height: auto;
+    border-radius: 0.8rem;
+
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+
+
+/* Area do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 2rem;
+    
+}
+
+.menu-item {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    border: 2px;
+}
+
+.menu-item img {
+    width: 2rem;
+}
+
+.menu-item {
+    width: 2rem;
+}
+
+.menu-item:hover {
+    width: 2rem;
+    rotate: 10deg;
+    transition: all 0.4s;
+}
+
+
+
+
+#nav-bar {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* Área do perfil */
+#profile-head {
+    display: flex;
+    justify-content: center;
+
+    margin: 0px 2rem
+}
+
+#profile-space {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+
+    grid-template-areas: "image profile";
+    align-content: center;
+    align-items: center;
+
+
+
+    width: 100%;
+    height: 18rem;
+    background: var(--gray-light);
+    border-radius: 0.5rem;
+
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#image-profile {
+    width: 70%;
+    height: 16rem;
+    background-size: cover;
+    background-image: url(/image-exemples/imagem-profile-exemple.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    grid-area: image;
+    margin-left: 3rem;
+
+    border: 2px solid var(--white);
+    border-radius: 50%;
+   
+}
+
+#profile-data {
+    grid-area: profile;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 23% 23% 30% 24%;
+
+    grid-template-areas: "name-id name"
+                         "conected posts"
+                         "bio bio"
+                         "config1 config2";
+
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    color: var(--black);
+}
+
+#name-id {
+    grid-area: name-id;
+    background: var(--gray-light);
+    border-bottom: 4px solid var(--blue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    height: 90%;
+  
+}
+#name {
+    grid-area: name;
+    background: var(--gray-light);
+    border-bottom: 4px solid var(--blue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    height: 90%;
+
+}
+#followers {
+    grid-area: conected;
+    background: var(--gray-light);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    height: 90%;
+    border-radius: 0.8rem;
+}
+#posts {
+    grid-area: posts;
+    background: var(--gray-light);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    height: 90%;
+    border-radius: 0.8rem;
+}
+#bio {
+    grid-area: bio;
+    background: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 95%;
+    height: 90%;
+    border-radius: 0.8rem;
+}
+
+#profile-config {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 0.5rem;
+    width: 90%;
+}
+
+.profile-button img {
+    width: 1rem;
+}
+
+#profile-bt-config-1 {
+    grid-area: config1;
+    padding: 0.5rem;
+}
+
+#profile-bt-config-2 {
+    grid-area: config2;
+    padding: 0.5rem;
+}
+
+
+
+
+/* Área de postagens */
+#posts-area {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    
+    width: 100%;
+}
+
+#posts-area button {
+    width: 10rem;
+    padding: 1rem;
+}
+
+#post-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+}
+
+#post-list img {
+    width: 20rem;
+}
+
+#post-list #grid {
+    width: 95%;
+    background: var(--gray-light);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+}
+
+

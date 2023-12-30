@@ -1,0 +1,114 @@
+html {
+    --black: #263238;
+    --light-black: #37474F;
+    --white: #FAFAFA;
+    --light-blue: #E0ECFF;
+    --red: #E83F5B;
+    --blue: #27DEBF;
+    --background: #FBFCFF;
+    --overlay: #040911;
+    --icons-and-details: #A5B0C1;
+
+    --gray-dark: #4D5E77;
+    --gray-blue: #A1B2CD;
+    --gray-light: #E5EAF1;
+
+    color: var(--black);
+    /*1rem = 16px (User Agent) 100%*/
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(250, 250, 250);
+
+    display: flex;
+    justify-content: center;
+}
+
+body, button, input, textarea {
+    /*Intervalo de tamanhos*/
+    font-size: clamp(12px, 1.1rem, 2vw);
+
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62,5%;
+    overflow-x: hidden;
+}
+
+
+
+
+/* Buttons */
+.button-1 {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 2px solid #27DEBF;
+    color: white;
+    background-color: #27DEBF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.button-1:hover {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 2px solid #26caaf;
+    color: white;
+    background-color: #26caaf;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: all 0.2s;
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.button-2 {
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    border: none;
+    color: white;
+    background: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.button-2:hover {
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    color: white;
+    background: var(--light-black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+
+
+
+
+/* Inputs */
+.input-text {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #909090;
+    border: 2px solid #909090;
+    outline: none;
+}
